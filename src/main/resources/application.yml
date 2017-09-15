@@ -1,0 +1,16 @@
+# swagger开关 打开true/关闭false
+swagger:
+  enable: true
+
+# 端口号
+server:
+  port: 80
+  tomcat:
+    uri-encoding: UTF-8
+
+# mongo配置
+spring:
+  data:
+    mongodb:
+      database: mydb
+
