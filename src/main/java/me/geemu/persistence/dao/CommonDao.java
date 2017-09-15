@@ -1,4 +1,4 @@
-package me.geemu.dao;
+package me.geemu.persistence.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;

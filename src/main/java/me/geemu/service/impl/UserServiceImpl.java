@@ -1,7 +1,7 @@
 package me.geemu.service.impl;
 
-import me.geemu.dao.CommonDao;
-import me.geemu.model.User;
+import me.geemu.persistence.dao.CommonDao;
+import me.geemu.persistence.model.User;
 import me.geemu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -21,7 +21,12 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private CommonDao commonDao;
 
-
+    /**
+     * 根据姓查找用户
+     *
+     * @param firstName
+     * @return
+     */
     @Override
     public List<User> findByFirstName(String firstName) {
         Criteria criteria = new Criteria();

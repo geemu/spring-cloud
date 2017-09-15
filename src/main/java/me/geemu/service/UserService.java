@@ -1,6 +1,7 @@
 package me.geemu.service;
 
-import me.geemu.model.User;
+
+import me.geemu.persistence.model.User;
 
 import java.util.List;
 
@@ -11,6 +12,18 @@ import java.util.List;
  * Description:
  */
 public interface UserService {
-
+    /**
+     * 根据姓查找用户
+     *
+     * @param firstName
+     * @return
+     */
     List<User> findByFirstName(String firstName);
+
+//    /**
+//     * 创建一个用户   返回主键
+//     *
+//     * @return
+//     */
+//    String createOneUser(User user);
 }

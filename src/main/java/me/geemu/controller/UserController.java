@@ -2,9 +2,10 @@ package me.geemu.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import me.geemu.model.User;
+import me.geemu.persistence.model.User;
 import me.geemu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,7 +25,7 @@ public class UserController {
     private UserService userService;
 
     @ApiOperation(value = "测试", notes = "测试", response = User.class)
-    @GetMapping("/test/{firstName}")
+    @GetMapping("first_name/{firstName}")
     public List<User> userLogin(@PathVariable("firstName") String firstName) {
         return userService.findByFirstName(firstName);
     }
