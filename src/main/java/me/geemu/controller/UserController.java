@@ -5,7 +5,6 @@ import io.swagger.annotations.ApiOperation;
 import me.geemu.persistence.model.User;
 import me.geemu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
