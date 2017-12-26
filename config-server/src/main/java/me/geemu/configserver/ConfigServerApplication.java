@@ -2,6 +2,7 @@ package me.geemu.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
  * @author Geemu
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Date:
  * Description:
  */
+@EnableConfigServer
 @SpringBootApplication
 public class ConfigServerApplication {
 
