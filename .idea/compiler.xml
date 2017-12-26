@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client" />
         <module name="eureka-server" />
-        <module name="serice-feign" />
+        <module name="service-feign" />
         <module name="service-ribbon" />
       </profile>
     </annotationProcessing>
@@ -16,6 +16,7 @@
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="serice-feign" target="1.8" />
+      <module name="service-feign" target="1.8" />
       <module name="service-ribbon" target="1.8" />
       <module name="spring-cloud" target="1.5" />
     </bytecodeTargetLevel>
