@@ -9,6 +9,8 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * Email:cfmmail@sina.com
  * Date: 2017/12/5 13:42
  * Description:
+ * @EnableEurekaServer Eureka Server 标识
+ * @SpringBootApplication Spring Boot 应用标识
  */
 @EnableEurekaServer
 @SpringBootApplication

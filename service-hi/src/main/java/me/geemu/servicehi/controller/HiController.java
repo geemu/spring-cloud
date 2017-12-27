@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HiController {
+    
     @Value("${server.port}")
     String port;
 
