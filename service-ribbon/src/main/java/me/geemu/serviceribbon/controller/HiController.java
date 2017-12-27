@@ -1,12 +1,10 @@
 package me.geemu.serviceribbon.controller;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import me.geemu.serviceribbon.service.HiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * @author Geemu
@@ -21,6 +19,7 @@ public class HiController {
 
     @GetMapping("/hi")
     public String hi(@RequestParam String name) {
+        System.out.println("----------------------------------------------------ribbon");
         return hiService.hiService(name);
     }
 

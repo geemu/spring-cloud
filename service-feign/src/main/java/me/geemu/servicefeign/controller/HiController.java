@@ -19,6 +19,7 @@ public class HiController {
 
     @GetMapping("/hi")
     public String hi(@RequestParam String name) {
+        System.out.println("----------------------------------------------------feign");
         return hiService.hiService(name);
     }
 }
