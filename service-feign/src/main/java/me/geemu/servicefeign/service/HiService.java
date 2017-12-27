@@ -1,5 +1,6 @@
 package me.geemu.servicefeign.service;
 
+import me.geemu.servicefeign.service.impl.HiServiceImpl;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * Date: 2017/12/26  17:19
  * Description: user
  */
-@FeignClient(value = "service-hi")
+@FeignClient(value = "service-hi", fallback = HiServiceImpl.class)
 public interface HiService {
     /**
      * 打招呼
@@ -20,4 +21,5 @@ public interface HiService {
      */
     @GetMapping("hi")
     String hiService(@RequestParam("name") String name);
+
 }
