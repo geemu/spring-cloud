@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author Geemu
  * Email:cfmmail@sina.com
- * Date: 2017/12/26  16:27
+ * Date: 2017/12/27  9:32
  * Description: 负载均衡
  */
 @Component
