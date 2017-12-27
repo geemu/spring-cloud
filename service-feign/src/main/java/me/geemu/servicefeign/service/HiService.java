@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * Date: 2017/12/26  17:19
  * Description: user
  */
-@FeignClient("service-hi")
+@FeignClient(value = "service-hi")
 public interface HiService {
     /**
      * 打招呼
