@@ -2,7 +2,9 @@ package me.geemu.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Author: Geemu
@@ -10,6 +12,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * Date: 2017/12/5 13:42
  * Description:
  */
+@EnableEurekaClient
 @EnableConfigServer
 @SpringBootApplication
 public class ConfigServerApplication {
